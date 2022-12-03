@@ -1,0 +1,14 @@
+package com.mercury.test;
+
+public class LoginRegressionSuite {
+
+	// public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	WebDriver driver;
+	
+	MethodRepository mr = new MethodRepository();
+	
+	}
+
+}

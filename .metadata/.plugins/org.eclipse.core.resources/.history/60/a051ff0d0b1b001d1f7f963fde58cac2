@@ -1,0 +1,15 @@
+package com.selenium.test;
+
+
+
+public class Driver1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		MR1 mr = new MR1();
+	//	mr.browserLaunch_App_launch();
+	    mr.nopCommerceTest();
+		mr.techOnlineLogin();
+		
+	}
+
+}

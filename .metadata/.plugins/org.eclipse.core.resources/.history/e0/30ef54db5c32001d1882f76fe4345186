@@ -1,0 +1,401 @@
+package com.selenium.test;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class MR1 {
+	
+static WebDriver driver;
+	
+	public void browserLaunch_App_launch() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+	//  driver.get("https://opensource-demo.orangehrmlive.com/");
+	//  driver.get("https://outlook.office.com/mail/");
+	//	driver.get("https://demo.guru99.com/test/newtours/index.php");
+    //	Thread.sleep(3000);
+ //		driver.close();
+		
+	//	WebElement username = driver.findElement(By.name("userName"));
+	//	username.sendKeys("dasd");
+	//	Thread.sleep(3000);
+		
+	//	WebElement password = driver.findElement(By.name("password"));
+	//	password.sendKeys("dasd");
+	//	Thread.sleep(3000);
+		
+//		WebElement submit = driver.findElement(By.name("submit"));
+//		submit.click();
+
+		
+		driver.get("https://facebook.com/");
+		Thread.sleep(3000);
+		
+		WebElement email = driver.findElement(By.name("email"));
+	 	email.sendKeys("rajendrapnd34@gmail.com");
+	 	Thread.sleep(3000);
+	 	
+	    WebElement pass = driver.findElement(By.name("pass"));
+		pass.sendKeys("rajendra123");
+		Thread.sleep(3000);
+		
+		WebElement login = driver.findElement(By.name("login"));
+		login.click();
+
+		
+	//	driver.get ("https://outlook.office.com/mail/");
+//		Thread.sleep(3000);
+		
+	//	WebElement SignIn = driver.findElement(By.name("loginfmt"));	
+	//	SignIn.sendKeys("rajendra.rp@yethi.co.in");
+//		Thread.sleep(3000);
+		
+//		WebElement next = driver.findElement(By.name("next"));
+//		next.click();
+		
+//   	loginfmt	
+				
+		}
+	
+	public void nopCommerceTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+	//	driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
+	//	Thread.sleep(3000);
+		
+		//WebElement email = driver.findElement(By.name("Email"));
+	//	WebElement email = driver.findElement(By.xpath("//input[@name='Email']"));
+	//	email.clear();
+	//	Thread.sleep(2000);
+	//	email.sendKeys("admin@yourstore.com");
+	// 	Thread.sleep(3000);
+	 	 	 	
+//		WebElement pass = driver.findElement(By.name("Password"));
+// 	    WebElement pass = driver.findElement(By.xpath("//input[@name='Password']"));
+//	 	pass.clear();
+//	 	Thread.sleep(2000);
+//	 	pass.sendKeys("admin");
+	    
+//	 	WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
+//	 	login.click();
+	 	
+				
+	 	driver.get("https://interface.infosys.com/TechonlineV2/Base/GlobalLogin");
+	 	Thread.sleep(3000);
+	 	 
+	 	WebElement techid = driver.findElement(By.xpath("//input[@type='text']"));
+	 	Thread.sleep(2000);
+	 	techid.sendKeys("infy");
+	 	
+	 	WebElement pass = driver.findElement(By.xpath("//input[@type='password']"));
+	 	Thread.sleep(2000);
+	 	pass.sendKeys("Infy123");
+
+	 	WebElement login = driver.findElement(By.xpath("//a[@onclick='Login()']"));
+        login.click();
+        
+	 	
+	 	
+	 	
+	  	
+	}
+	
+	
+	
+	public void nopCommerceLogin() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
+		Thread.sleep(5000);
+		WebElement email = driver.findElement(By.xpath("//input[@id='Email']"));
+		email.clear();
+		email.sendKeys("admin@yourstore.com");
+		WebElement password =  driver.findElement(By.xpath("//input[@id='Password']"));
+		password.clear();
+		password.sendKeys("admin");
+		WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
+		login.click();
+		Thread.sleep(5000);
+		
+		
+		String expectedTitle = "Dashboard / nopCommerce administration";
+		String actualTitle = driver.getTitle();
+		
+		if(expectedTitle.equals(actualTitle)) {
+			System.out.println("Login is successfull!!");
+		}
+		else {
+			System.out.println("Login is unsuccessfull!!");
+		}
+		
+		
+		
+	}
+	
+	public void nopCommerceLoginWithDynamicCredential(String email1, String password1) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
+		Thread.sleep(5000);
+		WebElement email = driver.findElement(By.xpath("//input[@id='Email']"));
+		email.clear();
+		email.sendKeys(email1);
+		WebElement password =  driver.findElement(By.xpath("//input[@id='Password']"));
+		password.clear();
+		password.sendKeys(password1);
+		WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
+		login.click();
+		Thread.sleep(5000);
+		
+		
+		String expectedTitle = "Dashboard / nopCommerce administration";
+		String actualTitle = driver.getTitle();
+		
+		if(expectedTitle.equals(actualTitle)) {
+			System.out.println("Login is successfull!!");
+		}
+		else {
+			System.out.println("Login is unsuccessfull!!");
+				
+		}
+		
+		WebElement Customers = driver.findElement(By.xpath("//p[contains(text(), 'Customers')]"));
+		Customers.click();
+		Thread.sleep(5000);
+		
+		WebElement Vendors = driver.findElement(By.xpath("//p[contains(text(), 'Vendors')]"));		
+		Vendors.click();
+		
+
+	    WebElement VendorName = driver.findElement(By.xpath("//input[@name='SearchName']"));		
+		VendorName.sendKeys("Vendor 1");
+		Thread.sleep(5000);
+        
+			
+		WebElement Search = driver.findElement(By.xpath("//button[@id='search-vendors']"));
+		Search.click();
+		Thread.sleep(5000);
+		VendorName.clear();
+		Thread.sleep(3000);
+		
+		
+		
+		WebElement VendorEmail = driver.findElement(By.xpath("//input[@id='SearchEmail']"));
+		VendorEmail.sendKeys("vendor2email@gmail.com");
+		Thread.sleep(5000);
+		
+		
+//		WebElement Search1 = driver.findElement(By.xpath("//button[@id='search-vendors']"));
+//		Search1.click();
+//		Thread.sleep(5000);
+		
+		
+		
+						
+		
+		
+		
+		// Search vendor with vendor name
+		
+				
+		
+		// Search vendor with email
+		
+				
+		
+	}
+	
+	public void dropdownHandle() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.get("https://demo.guru99.com/test/newtours/reservation.php");
+		Thread.sleep(5000);
+		
+	    WebElement link_flight = driver.findElement(By.xpath("//a[@href='reservation.php']"));
+	//	WebElement link_flight = driver.findElement(By.xpath(null);
+		link_flight.click();
+		Thread.sleep(4000);
+		WebElement deptDropDown = driver.findElement(By.name("fromPort"));
+		Select sl = new Select(deptDropDown);
+		WebElement arvDropDown = driver.findElement(By.name("toPort"));
+		Select sl1 = new Select(arvDropDown);
+		sl.selectByVisibleText("Paris");
+		sl1.selectByVisibleText("London");
+		WebElement airLnDropDown = driver.findElement(By.name("airline"));
+		Select sl2 = new Select(airLnDropDown);
+		sl2.selectByVisibleText("Blue Skies Airlines");
+	//	sl2.selectByValue("Unified Airlines");
+	//	sl2.selectByIndex(3);
+		
+		
+	} 
+	
+	public void iframe() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		        driver.get("http://demo.guru99.com/test/guru99home/");
+		        Thread.sleep(6000);
+		       
+		       
+		        JavascriptExecutor js = (JavascriptExecutor) driver;
+		        js.executeScript("window.scrollBy(0,2300)");
+		        Thread.sleep(6000);  
+		       
+		       
+		        driver.switchTo().frame("a077aa5e");
+		        Thread.sleep(4000);
+		        WebElement linkbtn = driver.findElement(By.xpath("//img[@src='Jmeter720.png']"));
+		        linkbtn.click();
+		        driver.switchTo().defaultContent();
+
+	}
+	
+	
+	// Reading data from Property file
+	public void loginWithPropertyFile() throws InterruptedException, IOException {
+		System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demo.guru99.com/test/newtours/");
+	    Thread.sleep(6000);
+	   
+	    File file = new File("./testdata/testdata.properties");
+	    FileInputStream fis = new FileInputStream(file);
+	    Properties prop = new Properties();
+	    prop.load(fis);
+	    
+	    WebElement uname = driver.findElement(By.name("userName"));
+	    uname.sendKeys(prop.getProperty("username"));
+	    
+	    Thread.sleep(3000);
+	    
+	    WebElement pwd = driver.findElement(By.name("password"));
+	    pwd.sendKeys(prop.getProperty("password"));
+	    
+	    Thread.sleep(3000);
+	    	    
+	    WebElement loginbtn = driver.findElement(By.name("submit"));
+	    loginbtn.click();
+	    
+	}	
+	
+	
+	    public void loginImplicitWait() throws InterruptedException {
+	    	
+	    	System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			 driver.get("https://demo.guru99.com/test/newtours/");
+	   // 	Thread.sleep(3000);
+			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+			
+			WebElement uName = driver.findElement(By.xpath("//input[@name='userName']"));
+	    	uName.sendKeys("dasd");
+	  
+	    	WebElement pwd = driver.findElement(By.xpath("//input[@name='password']"));
+	    	pwd.sendKeys("dasd");
+	    
+	    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	    	WebElement login = driver.findElement(By.xpath("//input[@value='Submit']"));
+	    	login.click();
+	    	
+	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    	WebElement register = driver.findElement(By.xpath("//a[@href='register.php']"));
+	    	register.click();
+	    }
+	    	
+	    
+	    //public void loginExplicitWait()  {
+	    		
+	    		//System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+			//	driver = new ChromeDriver();
+		//		driver.manage().window().maximize();
+		//		driver.get("https://demo.guru99.com/test/newtours/");
+				
+     	    	//new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='userName']")));
+
+	    //		WebElement uName = driver.findElement(By.xpath("//input[@name='userName']"));
+	    //	    uName.sendKeys("dasd");
+
+	    	//	new WebDriverWait(driver, 10)
+	    	//	.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='password']")));
+
+	    		//WebElement pwd = driver.findElement(By.xpath("//input[@name='password']"));
+	    	//	pwd.sendKeys("dasd");
+
+	    	//	new WebDriverWait(driver, 10)
+	    	//	.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@value='Login']")));
+
+	    	//	WebElement login = driver.findElement(By.xpath("//input[@value='Submit']"));
+	    	//	login.click(); 
+				
+	    			   	
+	    
+	    	    public void loginRobot() throws InterruptedException, AWTException {
+		    		
+		    		System.setProperty("webdriver.chrome.driver", "./driver1/chromedriver.exe");
+					driver = new ChromeDriver();
+					driver.manage().window().maximize();
+					driver.get("https://demo.guru99.com/test/newtours/");
+	  
+					WebElement uName = driver.findElement(By.xpath("//input[@name='userName']"));
+					uName.sendKeys("dasd");
+					WebElement pwd = driver.findElement(By.xpath("//input[@name='password']"));
+					pwd.sendKeys("dasd");
+					Thread.sleep(2000);
+					
+					Robot r1 = new Robot();
+					r1.keyPress(KeyEvent.VK_TAB);
+					Thread.sleep(3000);
+					r1.keyPress(KeyEvent.VK_ENTER);
+
+					
+	}
+	    
+	   
+	    
+	    
+	    
+	}	   
+		        
+	    
+	    	       
+	
+	
+	
+
+
+

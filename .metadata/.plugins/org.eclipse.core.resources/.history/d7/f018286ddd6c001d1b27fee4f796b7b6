@@ -1,0 +1,19 @@
+package com.selenium.test6;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MR6 {static WebDriver driver;
+
+public void browserLaunch_App_launch() {
+	System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+	driver = new ChromeDriver();		
+	driver.manage().window().maximize();
+	//driver.get("https://incometaxindia.gov.in/Pages/default.aspx/");
+	//driver.get("https://www.selenium.dev/documentation/webdriver/");
+	driver.get("https://interface.infosys.com/TechonlineV2/Base/GlobalLogin/");
+	
+}
+
+
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-21T20:34:36Z" name="Mercury Tours Regression Suite" finished-at="2022-10-21T20:35:49Z" duration-ms="72280">
+    <groups>
+    </groups>
+    <test started-at="2022-10-21T20:34:36Z" name="Login Regression Suite" finished-at="2022-10-21T20:35:13Z" duration-ms="36321">
+      <class name="com.mercury.test.LoginRegressionSuite">
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:04:36Z" name="appLaunch" finished-at="2022-10-22T02:04:58Z" duration-ms="21731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="verifyValidLogin()[pri:0, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:04:58Z" name="verifyValidLogin" description="TC_001: Verifying valid login functionality" finished-at="2022-10-22T02:04:58Z" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="appClose()[pri:0, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:04:58Z" name="appClose" finished-at="2022-10-22T02:04:59Z" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appClose -->
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:04:59Z" name="appLaunch" finished-at="2022-10-22T02:05:12Z" duration-ms="13651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="verifyInvalidLogin()[pri:1, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:05:12Z" name="verifyInvalidLogin" description="TC_002: Verifying invalid login functionality" finished-at="2022-10-22T02:05:13Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogin -->
+        <test-method is-config="true" signature="appClose()[pri:0, instance:com.mercury.test.LoginRegressionSuite@55fe41ea]" started-at="2022-10-22T02:05:13Z" name="appClose" finished-at="2022-10-22T02:05:13Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appClose -->
+      </class> <!-- com.mercury.test.LoginRegressionSuite -->
+    </test> <!-- Login Regression Suite -->
+    <test started-at="2022-10-21T20:35:13Z" name="Flight Finder Regression Suite" finished-at="2022-10-21T20:35:49Z" duration-ms="35908">
+      <class name="com.mercury.test.FlightFinderRegressionSuite">
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:13Z" name="appLaunch" finished-at="2022-10-22T02:05:24Z" duration-ms="11367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="VerifyPassengersValueSelection()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:24Z" name="VerifyPassengersValueSelection" description="TC_003: Passengers Flight details value selection." finished-at="2022-10-22T02:05:24Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPassengersValueSelection -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:24Z" name="closeApp" finished-at="2022-10-22T02:05:24Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:24Z" name="appLaunch" finished-at="2022-10-22T02:05:35Z" duration-ms="10247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="verifyDepartingFromValueSelection()[pri:1, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:35Z" name="verifyDepartingFromValueSelection" description="TC_002: Verifying departing from desired value selection." finished-at="2022-10-22T02:05:35Z" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDepartingFromValueSelection -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:35Z" name="closeApp" finished-at="2022-10-22T02:05:35Z" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:35Z" name="appLaunch" finished-at="2022-10-22T02:05:48Z" duration-ms="12870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="verifyDefaultSelectionFlightType()[pri:2, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:48Z" name="verifyDefaultSelectionFlightType" description="TC_001: Verifying default selection of flight type." finished-at="2022-10-22T02:05:48Z" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDefaultSelectionFlightType -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.mercury.test.FlightFinderRegressionSuite@37ceb1df]" started-at="2022-10-22T02:05:48Z" name="closeApp" finished-at="2022-10-22T02:05:49Z" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.mercury.test.FlightFinderRegressionSuite -->
+    </test> <!-- Flight Finder Regression Suite -->
+  </suite> <!-- Mercury Tours Regression Suite -->
+</testng-results>

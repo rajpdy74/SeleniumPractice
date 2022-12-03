@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mercury Tours Regression Suite]" guice-stage="DEVELOPMENT">
+  <test name="Login Regression Suite(failed)">
+    <classes>
+      <class name="com.mercury.test.LoginRegressionSuite">
+        <methods>
+          <include name="appLaunch"/>
+          <include name="verifyValidLogin"/>
+          <include name="verifyInvalidLogin"/>
+        </methods>
+      </class> <!-- com.mercury.test.LoginRegressionSuite -->
+      <class name="com.mercury.test.FlightFinderRegressionSuite">
+        <methods>
+          <include name="appLaunch"/>
+        </methods>
+      </class> <!-- com.mercury.test.FlightFinderRegressionSuite -->
+    </classes>
+  </test> <!-- Login Regression Suite(failed) -->
+  <test name="Flight Finder Regression Suite(failed)">
+    <classes>
+      <class name="com.mercury.test.LoginRegressionSuite">
+        <methods>
+          <include name="appLaunch"/>
+        </methods>
+      </class> <!-- com.mercury.test.LoginRegressionSuite -->
+      <class name="com.mercury.test.FlightFinderRegressionSuite">
+        <methods>
+          <include name="verifyDefaultSelectionFlightType"/>
+          <include name="verifyDepartingFromValueSelection"/>
+          <include name="appLaunch"/>
+        </methods>
+      </class> <!-- com.mercury.test.FlightFinderRegressionSuite -->
+    </classes>
+  </test> <!-- Flight Finder Regression Suite(failed) -->
+</suite> <!-- Failed suite [Mercury Tours Regression Suite] -->

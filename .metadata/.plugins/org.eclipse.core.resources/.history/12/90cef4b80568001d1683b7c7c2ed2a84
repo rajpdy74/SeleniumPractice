@@ -1,0 +1,14 @@
+package com.mercury.pages;
+
+import org.openqa.selenium.WebDriver;
+import com.mercury.utility.WaitElement;
+
+public class HotelPage {
+	
+	/* Global declaration of WebDriver Object */
+	WebDriver driver;
+	WaitElement waitelement;
+	
+	/* Object identification block */
+	
+	}

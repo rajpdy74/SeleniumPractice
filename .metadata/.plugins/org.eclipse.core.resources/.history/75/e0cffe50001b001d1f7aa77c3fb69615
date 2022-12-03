@@ -1,0 +1,113 @@
+package com.selenium.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MR1 {
+	
+static WebDriver driver;
+	
+	public void browserLaunch_App_launch() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+	//  driver.get("https://opensource-demo.orangehrmlive.com/");
+	//  driver.get("https://outlook.office.com/mail/");
+	//	driver.get("https://demo.guru99.com/test/newtours/index.php");
+    //	Thread.sleep(3000);
+ //		driver.close();
+		
+	//	WebElement username = driver.findElement(By.name("userName"));
+	//	username.sendKeys("dasd");
+	//	Thread.sleep(3000);
+		
+	//	WebElement password = driver.findElement(By.name("password"));
+	//	password.sendKeys("dasd");
+	//	Thread.sleep(3000);
+		
+//		WebElement submit = driver.findElement(By.name("submit"));
+//		submit.click();
+
+		
+		driver.get("https://facebook.com/");
+		Thread.sleep(3000);
+		
+		WebElement email = driver.findElement(By.name("email"));
+	 	email.sendKeys("rajendrapnd34@gmail.com");
+	 	Thread.sleep(3000);
+	 	
+	    WebElement pass = driver.findElement(By.name("pass"));
+		pass.sendKeys("rajendra123");
+		Thread.sleep(3000);
+		
+		WebElement login = driver.findElement(By.name("login"));
+		login.click();
+
+		
+	//	driver.get ("https://outlook.office.com/mail/");
+//		Thread.sleep(3000);
+		
+	//	WebElement SignIn = driver.findElement(By.name("loginfmt"));	
+	//	SignIn.sendKeys("rajendra.rp@yethi.co.in");
+//		Thread.sleep(3000);
+		
+		WebElement next = driver.findElement(By.name("next"));
+		next.click();
+		
+		//loginfmt	
+				
+		}
+	
+	public void nopCommerceTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();	
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
+		Thread.sleep(3000);
+		
+		//WebElement email = driver.findElement(By.name("Email"));
+		WebElement email = driver.findElement(By.xpath("//input[@name='Email']"));
+		email.clear();
+		Thread.sleep(2000);
+		email.sendKeys("admin@yourstore.com");
+	 	Thread.sleep(3000);
+	 	 	 	
+//		WebElement pass = driver.findElement(By.name("Password"));
+	 	WebElement pass = driver.findElement(By.xpath("//input[@name='Password']"));
+	 	pass.clear();
+	 	Thread.sleep(2000);
+	 	pass.sendKeys("admin");
+	    
+	 	WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
+	 	login.click();
+	 	
+	
+	 	  public void techOnlineId() throws InterruptedException {
+			System.setProperty("webdriver.chrome.driver", "D:\\TESTAUTOMATION\\projects\\Test_Automation_Selenium\\driver\\chromedriver.exe");
+			driver = new ChromeDriver();	
+			Thread.sleep(3000);
+			driver.manage().window().maximize();
+			Thread.sleep(3000);
+		
+	 	
+	 	driver.get("https://interface.infosys.com/TechonlineV2/");
+	 	Thread.sleep(3000);
+	 	
+	 	WebElement TechID = driver.findElement(By.xpath("//input[@type='id']"));
+	 	TechID.sendKeys(null)
+	 	
+	 	
+	 	
+	  	
+	}
+
+}
+
+

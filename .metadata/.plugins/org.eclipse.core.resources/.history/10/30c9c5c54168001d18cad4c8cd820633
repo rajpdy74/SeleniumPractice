@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite name="Mercury Tours Regression Suite">
+         
+   <test name="Login Regression Suite">
+     <classes>
+       <class name="com.mercury.gradle.test.LoginRegressionSuite"/>
+     </classes>
+   </test>
+          
+  <test name="Flight Finder Regression Suite">
+	 <classes>
+	   <class name="com.mercury.gradle.test.FlightFinderRegressionSuite"/>
+	 </classes>
+   </test>
+   
+   <test name="Hotel Regression Suite">
+	 <classes>
+	   <class name="com.mercury.test.HotelRegressionSuite"/>
+	 </classes>
+   </test>
+   
+</suite>

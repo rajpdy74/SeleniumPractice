@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Gradle_Project_2-lib"/>
+    <listAttribute key="org.testng.eclipse.SUITE_TEST_LIST">
+        <listEntry value="D:\TESTAUTOMATION\projects1\Gradle_Project_2\lib\testng\testng.xml"/>
+    </listAttribute>
+    <intAttribute key="org.testng.eclipse.TYPE" value="3"/>
+</launchConfiguration>

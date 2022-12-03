@@ -1,0 +1,52 @@
+package com.selenium.test;
+
+import java.awt.AWTException;
+import java.io.IOException;
+
+import org.sikuli.script.FindFailed;
+
+import jxl.read.biff.BiffException;
+
+public class Driver1 {
+
+	public static void main(String[] args) throws InterruptedException, IOException, AWTException, BiffException, FindFailed {
+	MR1 mr = new MR1();
+	
+       //  mr.browserLaunch_App_launch();
+	   //   mr.facebook_browserLaunch_App_launch();
+	   //    mr.nopCommerceLogin();
+	   //	mr.techOnlineLogin();
+		
+//	mr.nopCommerceLoginWithDynamicCredential("abcdn@yourstore.com", "abcde");
+		
+//	 mr.nopCommerceLoginWithDynamicCredential("admin@yourstore.com", "admin");
+		
+	//	mr.dropdownHandle();
+	//	mr.iframe();
+		
+	//	mr.loginWithPropertyFile(); 
+	
+	//	mr.loginImplicitWait();
+		
+		mr.loginExplicitWait();	
+	  
+	//	mr.loginRobot();
+		 
+	//	mr.loginAction();
+		
+	//    mr.loginDataDrivenExcelSheet();
+		
+	  //   mr.loginwithsikuli();
+		
+	  //     mr.loginanb();    
+		
+		
+		
+		
+	}
+
+
+
+}
+
+

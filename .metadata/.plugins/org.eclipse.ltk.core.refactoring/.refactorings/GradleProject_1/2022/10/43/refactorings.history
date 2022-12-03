@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GradleProject_1/gradle&apos; to &apos;gradle1&apos;" description="Rename resource &apos;gradle&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="gradle" name="gradle1" stamp="1666383502602" updateReferences="true"/>
+</session>

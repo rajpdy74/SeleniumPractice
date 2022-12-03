@@ -1,0 +1,18 @@
+package com.mercury.test;
+
+import org.openqa.selenium.WebDriver;
+
+import com.mercury.pages.HotelFinderPage;
+import com.mercury.pages.LoginPage;
+import com.mercury.utility.BrowserFactory;
+
+public class HotelFRegressionSuite {
+	
+	private static final boolean enabled = false;
+	BrowserFactory browserFactory;
+	LoginPage loginPage;
+	WebDriver driver;
+	HotelFinderPage hotelFinderPage;
+	
+
+}

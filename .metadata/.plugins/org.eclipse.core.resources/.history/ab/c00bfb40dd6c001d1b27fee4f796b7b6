@@ -1,0 +1,15 @@
+package com.selenium.test6;
+
+import com.selenium.test6.MR6;
+
+public class Driver6 {
+
+	public static void main(String[] args) {
+		MR6 mr = new MR6();
+		mr.browserLaunch_App_launch();
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
